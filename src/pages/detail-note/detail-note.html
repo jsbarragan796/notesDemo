@@ -1,0 +1,37 @@
+<!--
+  Generated template for the DetailNotePage page.
+  
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  
+  <ion-navbar>
+    <ion-title> Note </ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    
+    <ion-card-header>
+      {{note.title}}
+    </ion-card-header>
+    
+    <ion-card-content>
+      {{note.description}}
+    </ion-card-content>
+    
+  </ion-card>
+  
+  <ion-fab right bottom>
+    <button ion-fab color="secondary" (click)="editNote()">
+      <ion-icon name="create">   
+      </ion-icon>
+    </button>
+  </ion-fab>
+  
+  
+</ion-content>

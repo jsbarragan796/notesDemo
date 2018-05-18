@@ -34,11 +34,11 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
+  primary:    rgb(23, 160, 198),
+  secondary:  rgb(254, 148, 49),
+  danger:     #e21c1c,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
 );
 
 
@@ -72,7 +72,11 @@ $colors: (
 
 @import "ionic.theme.default";
 
+$toolbar-background: color($colors,primary);
+$tabs-background: color($colors,primary);
 
+$tabs-tab-color-active: color($colors,secondary);
+$tabs-tab-color-inactive:color($colors,light);
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
